@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+}
+
+@font-face {
+    font-family: '7segmentos';
+    src: url('../fonts/digital-7.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+main{
+    /*Transformamos el contenedor en una cuadrícula*/
+    display: grid;
+    /*Definir filas y columnas del grid
+    Valores posibles: longitudes (px, em, %), fracciones (fr), auto, y combinaciones de estos.
+    Ejemplo: grid-template-columns: 1fr 2fr; define una columna que ocupa una fracción 
+    del espacio disponible y otra que ocupa dos fracciones.
+    se puede combinar con repeat(3,1fr) genera tres columnas que ocupan cada una
+    1 fracción del espacio disponible
+    */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /*
+    Establece el espacio entre las filas y columnas del grid.
+    Valores posibles: longitudes (px, em, %).
+    Ejemplo: gap: 20px; establece un espacio de 20 píxeles entre todas las filas y columnas.
+    */
+    gap: 20px;
+    justify-content: center;
+    /*Establece el alto del contenedor*/
+    height: 95vh;
+
+
+}
+
+#ContenedorReloj{
+    margin: auto;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+#Tiempo{
+    font-family: "7segmentos", serif;
+    color: white;
+    font-size: 10vh;
+}

@@ -1,0 +1,33 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+}
+
+.completada {
+    text-decoration: line-through;
+    color: green;
+}
+
+.noCompletada {
+    /*text-decoration: none;*/
+    color: purple;
+}
+
+#listaTareas li {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.noCompletada:hover {
+    color: gray;
+    font-size: 50px;
+}
+
+#ContenedorTareas{
+    margin: auto;
+    grid-column: 2;
+    grid-row: 1;
+}
